@@ -114,10 +114,11 @@ WHERE DEPT.DEPT_NAME IN ('Sales', 'Development')
 ORDER BY CURR_DEPT_EMP.EMPLOYMENT_COUNT DESC, EMP.EMP_NO;
 
 
-
 --Query 8> In descending order, list the frequency count of employee last names, i.e., how many employees share each last name.
 
 SELECT LAST_NAME, COUNT(*) AS "Employee Count with Same Last Name"
 FROM T_EMPLOYEE
 GROUP BY LAST_NAME
 ORDER BY COUNT(*) DESC;
+
+----Query 9> Generate query to get average salary by title
